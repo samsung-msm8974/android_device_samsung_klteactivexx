@@ -55,6 +55,9 @@ include $(COMMON_PATH)/nfc/pn547/board.mk
 # Radio/RIL
 include $(COMMON_PATH)/radio/single/board.mk
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/klteactivexx/releasetools
+
 # inherit from the proprietary version
 include vendor/samsung/klteactivexx/BoardConfigVendor.mk
 include vendor/samsung/klte-common/BoardConfigVendor.mk

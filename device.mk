@@ -43,6 +43,15 @@ PRODUCT_COPY_FILES += \
 # NFC
 $(call inherit-product, device/samsung/msm8974-common/nfc/pn547/product.mk)
 
+# Releasetools
+PRODUCT_PACKAGES += \
+   dtc.sh \
+   hack.bin
+
+PRODUCT_COPY_FILES += \
+    device/samsung/klteactivexx/releasetools/dtc.sh:install/bin/dtc.sh \
+    device/samsung/klteactivexx/releasetools/hack.bin:install/bin/hack.bin
+
 # common msm8974
 $(call inherit-product, device/samsung/msm8974-common/common.mk)
 
