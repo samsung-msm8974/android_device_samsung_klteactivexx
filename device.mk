@@ -25,7 +25,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # NFC
-$(call inherit-product, device/samsung/klte-common/nfc/pn547/product.mk)
+$(call inherit-product, device/samsung/msm8974-common/nfc/pn547/product.mk)
 
-# common klte
-$(call inherit-product, device/samsung/klte-common/klte.mk)
+# common msm8974
+$(call inherit-product, device/samsung/msm8974-common/klte.mk)
