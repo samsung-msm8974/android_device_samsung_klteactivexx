@@ -26,6 +26,10 @@ $(call inherit-product, vendor/samsung/klteactivexx/klteactivexx-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
+# Display Device Config
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/displayconfig/klte/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
+
 # NFC
 $(call inherit-product, device/samsung/msm8974-common/nfc/pn547/product.mk)
 
