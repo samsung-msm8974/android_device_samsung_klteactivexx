@@ -25,6 +25,7 @@ $(call inherit-product, vendor/samsung/klteactivexx/klteactivexx-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
