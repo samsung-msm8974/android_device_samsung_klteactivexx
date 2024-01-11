@@ -43,14 +43,14 @@ void vendor_load_properties()
         /* klteactivexx */
         property_override("ro.build.description", "klteactivexx-user 5.0 LRX21T G870FXXU1BQE1 release-keys");
         set_ro_product_prop("device", "klteactivexx");
-        set_ro_product_prop("fingerprint", "samsung/klteactivexx/klteactive:5.0/LRX21T/G870FXXU1BQE1:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "samsung/klteactivexx/klteactive:5.0/LRX21T/G870FXXU1BQE1:user/release-keys");
         set_ro_product_prop("model", "SM-G870F");
         set_ro_product_prop("name", "klteactivexx");
     } else if (bootloader.find("G870A") == 0) {
         /* klteattactive */
         property_override("ro.build.description", "klteattactive-user 6.0.1 MMB29M G870AUCS2DPK7 release-keys");
         set_ro_product_prop("device", "klteattactive");
-        set_ro_product_prop("fingerprint", "samsung/klteattactive/klteattactive:6.0.1/MMB29M/G870AUCS2DPK7:user/release-keys");
+        set_ro_product_prop("build.fingerprint", "samsung/klteattactive/klteattactive:6.0.1/MMB29M/G870AUCS2DPK7:user/release-keys");
         set_ro_product_prop("model", "SM-G870A");
         set_ro_product_prop("name", "klteattactive");
     }
