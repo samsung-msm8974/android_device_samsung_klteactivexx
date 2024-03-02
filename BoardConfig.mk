@@ -47,7 +47,7 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../$(COMMON_PATH)/recovery/recovery_keys.
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/klte-include
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_klteactivexx
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_klteactivexx
 
 # NFC
 include $(COMMON_PATH)/nfc/pn547/board.mk
